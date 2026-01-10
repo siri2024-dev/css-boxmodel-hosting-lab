@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Product Cards</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+background-color: #f1f5f9;
+padding: 40px;
+}
+.grid {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 30px;
+max-width: 700px;
+margin: auto;
+}
+.card {
+border: 2px solid #1e40af;
+border-radius: 12px;
+padding: 20px;
+background-color: #ffffff;
+}
+.card h3 {
+margin: 0 0 10px;
+}
+.price {
+font-weight: bold;
+color: #16a34a;
+margin-bottom: 10px;
+}
+.card p {
+margin-bottom: 15px;
+color: #334155;
+}
+.card button {
+padding: 10px 16px;
+border: none;
+border-radius: 6px;
+background-color: #1e40af;
+color: white;
+cursor: pointer;
+}
+</style>
+</head>
+<body>
+<div class="grid">
+<div class="card">
+<h3>Product One</h3>
+<div class="price">₹499</div>
+<p>Simple and useful product for daily needs.</p>
+<button>Buy Now</button>
+</div>
+<div class="card">
+<h3>Product Two</h3>
+<div class="price">₹699</div>
+<p>High quality product with great features.</p>
+<button>Buy Now</button>
+</div>
+<div class="card">
+<h3>Product Three</h3>
+<div class="price">₹899</div>
+<p>Reliable product designed for performance.</p>
+<button>Buy Now</button>
+</div>
+<div class="card">
+<h3>Product Four</h3>
+<div class="price">₹1099</div>
+<p>Premium product with modern design.</p>
+<button>Buy Now</button>
+</div>
+</div>
+</body>
+</html>

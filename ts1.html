@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Border Properties </title>
+<Style>
+body{
+font-family:Arial,sans-serif;
+background-color:#f4f6f8;
+margin:0;
+padding:20px;
+}
+h1{
+text-align:center;
+margin-bottom:30px;
+color:#333;
+}
+.container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+.card{
+background-color:#fff;
+padding:20;
+text-align:center;
+height:140px;
+display:flex;
+font-size:16px;
+align-items:center;
+justify-content:center;
+}
+.border-shorthand{
+border: 4px solid #000;
+}
+.border-each-side{
+border-top: 4px solid red;
+border-right: 4px dashed green;
+border-bottom: 4px dotted blue;
+border-left: 4px double orange;}
+.border-dashed{
+border: 4px dashed purple;
+}
+.border-double{
+border: 6px double brown;
+}
+.border-radius{
+border: 4px solid teal;
+border-radius: 20px;
+}
+.outline-demo{
+border:4px solid black;
+outline:4px solid red;
+outline-offset:8px;
+}
+</Style>
+</head>
+<body>
+<h1>CSS Border Properties </h1>
+<div class="container">
+<div class="card border-shorthand">
+Border Shorthand <br>
+<small>border:4px solid blue</small>
+</div>
+<div class="card border-each-side">Different Borders on Each Side</div>
+<div class="card border-dashed">Dashed Border</div>
+<div class="card border-double">Double Border</div>
+<div class="card border-radius">Rounded
+Corners<br>(border-radius)</div>
+<div class="card outline-demo">Outline and Outline-Offset</div>
+</div>
+</body>
+</html>
