@@ -1,44 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang>
 <head>
-    <title>CSS Demo: Borders, Box Model, Padding & Margin</title>
+    <title>CSS Demos</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>CSS Border Properties</h1>
-    <div class="container">
-        <div class="card border-shorthand">
-            Border Shorthand <br>
-            <small>border:4px solid blue</small>
+    <section>
+        <h1>CSS Border Properties</h1>
+        <div class="container border-container">
+            <div class="card border-shorthand">
+                Border Shorthand <br>
+                <small>border:4px solid blue</small>
+            </div>
+            <div class="card border-each-side">Different Borders on Each Side</div>
+            <div class="card border-dashed">Dashed Border</div>
+            <div class="card border-double">Double Border</div>
+            <div class="card border-radius">
+                Rounded Corners<br>(border-radius)
+            </div>
+            <div class="card outline-demo">Outline and Outline-Offset</div>
         </div>
-        <div class="card border-each-side">Different Borders on Each Side</div>
-        <div class="card border-dashed">Dashed Border</div>
-        <div class="card border-double">Double Border</div>
-        <div class="card border-radius">
-            Rounded Corners<br>(border-radius)
+    </section>
+    <section>
+        <h1>Box Model With Border Box</h1>
+        <div class="box">
+            <div class="content">CONTENT AREA</div>
+            <div class="info">
+                Width: 320px<br>
+                Padding: 20px<br>
+                Border: 8px<br>
+                Margin: 40px
+            </div>
         </div>
-        <div class="card outline-demo">Outline and Outline-Offset</div>
-    </div>
-    <h1>Box Model with Border Box</h1>
-    <div class="box">
-        <div class="content">CONTENT AREA</div>
-        <div class="info">
-            Width: 320px<br>
-            Padding: 20px<br>
-            Border: 8px<br>
-            Margin: 40px
+    </section>
+    <section>
+        <h1>Padding vs Margin</h1>
+        <div class="container padding-margin-container">
+            <div class="box padding-box">
+                <h3>Box A (Padding)</h3>
+                <p>Inner space increased</p>
+            </div>
+            <div class="box margin-box">
+                <h3>Box B (Margin)</h3>
+                <p>Outer space increased</p>
+            </div>
         </div>
-    </div>
-    <h1>Padding vs Margin</h1>
-    <div class="container padding-margin-demo">
-        <div class="box padding-box">
-            <h3>Box A (Padding)</h3>
-            <p>Inner space increased</p>
+    </section>
+    <section>
+        <h1>Product Cards</h1>
+        <div class="grid">
+            <div class="card product-card">
+                <h3>Product One</h3>
+                <div class="price">₹499</div>
+                <p>Simple and useful product for daily needs.</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="card product-card">
+                <h3>Product Two</h3>
+                <div class="price">₹699</div>
+                <p>High quality product with great features.</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="card product-card">
+                <h3>Product Three</h3>
+                <div class="price">₹899</div>
+                <p>Reliable product designed for performance.</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="card product-card">
+                <h3>Product Four</h3>
+                <div class="price">₹1099</div>
+                <p>Premium product with modern design.</p>
+                <button>Buy Now</button>
+            </div>
         </div>
-        <div class="box margin-box">
-            <h3>Box B (Margin)</h3>
-            <p>Outer space increased</p>
-        </div>
-    </div>
+    </section>
 </body>
 </html>
+
+
+
